@@ -1,6 +1,6 @@
 /* GET 'about' page */
 const about = (req, res) => {
-    res.render('about', { title: 'About' });
+    res.render('generic-text', { title: 'About' });
 };
 
 const timings = (req, res) => {
