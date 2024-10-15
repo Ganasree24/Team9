@@ -28,6 +28,13 @@ const homelist = (req, res) => {
         facilities: ['Bulk Packaging', 'Organic Options'],
         link:'/shop2'
       },
+      {
+        name: 'Ameerpet Electronics Wholesale',
+        address: 'Ameerpet, Hyderabad',
+        rating: 3,
+        facilities: ['Warranty on electronics', 'On-site testing'],
+        link:'/shop3'
+      },
     ],
   });
 };
@@ -35,12 +42,16 @@ const homelist = (req, res) => {
     const locationInfo = (req, res) => {
        res.render('location-info', { title: 'Location info' });
       };
-      const shop1 = (req, res) => {
+    const shop1 = (req, res) => {
         res.render('shop1', { title: 'shop1' });
        };
-       const shop2 = (req, res) => {
-        res.render('shop2', { title: 'shop2' });
+    const shop2 = (req, res) => {
+        res.render('shop2', { title: 'shop2' });    
        };
+    const shop3 = (req, res) => {
+        res.render('shop3', { title: 'shop3' });    
+       };   
+       
       /* GET 'Add review' page */
       const addReview = (req, res) => {
        res.render('location-review-form', { title: 'Add review' });
@@ -50,6 +61,7 @@ const homelist = (req, res) => {
        locationInfo,
        addReview,
        shop1,
-       shop2
+       shop2,
+       shop3
       };
  

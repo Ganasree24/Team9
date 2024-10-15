@@ -1,0 +1,104 @@
+extends layout
+
+block content
+  .row.banner
+    .col-12
+      h1 Ameerpet Electronics Wholesale
+  
+  .row
+    .col-12.col-lg-9
+      .row
+        .col-12.col-md-6
+          p.rating
+            i.fas.fa-star
+            i.fas.fa-star
+            i.fas.fa-star
+            i.far.fa-star
+            i.far.fa-star
+          p Ameerpet, Hyderabad
+          
+          .card.card-primary
+            .card-block
+              h2.card-title Category
+              p.card-text Electronics
+
+          .card.card-primary
+            .card-block
+              h2.card-title Facilities
+              span.badge.badge-warning
+                i.fa.fa-check
+                | &nbsp;Bulk purchase discounts
+              | &nbsp;
+              span.badge.badge-warning
+                i.fa.fa-check
+                | &nbsp;Delivery services within the city 
+              | &nbsp;
+              span.badge.badge-warning
+                i.fa.fa-check
+                | &nbsp;Technical support and installation assistance
+              | &nbsp;
+          .card.card-primary
+            .card-block
+              h2.card-title Timings
+              p.card-text Monday to Saturday: 10:00 AM – 8:30 PM
+              p.card-text Sunday: 11:00 AM - 9:00 PM
+      
+        .col-12.col-md-6.location-map
+          .card.card-primary
+            .card-block
+              h2.card-title Location map 
+              <a href="https://www.google.com/maps/@17.442966,78.661608,14z?entry=ttu&g_ep=EgoyMDI0MDgyMy4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+              Location <br> <img src="stylesheets/images.jpeg" alt="Location Map"class="img-fluid">
+        .col-12.col-md-4.StoreImage
+          .card.card-primary
+            .card-block
+              h2.card-title Store Image
+              Location <br> <img src="/stylesheets/33EFC081-2FBB-42A4-928F-3829E2576ADD-1.jpg" class="img-fluid">
+        .col-12.col-md-4.StoreImage
+          .card.card-primary
+            .card-block
+              h2.card-title Store Image
+              Location <br> <img src="/stylesheets/th 7.webp" class="img-fluid">  
+        .col-12.col-md-4.StoreImage
+          .card.card-primary
+            .card-block
+              h2.card-title Store Image
+              Location <br> <img src="/stylesheets/th 6.jpg" class="img-fluid">          
+      </a>
+      .col-12
+        .card.card-primary.review-card
+          .card-block
+            a.btn.btn-primary.float-right(href='/location/review/new')
+              | Add review
+            h2.card-title Customer reviews
+            
+            .row.review
+              .col-12.no-gutters.review-header
+                span.rating
+                  i.fas.fa-star
+                  i.fas.fa-star
+                  i.fas.fa-star
+                  i.far.fa-star
+                  i.far.fa-star
+                span.reviewAuthor Raju
+                small.reviewTimestamp 12 February 2024
+              .col-12
+                p Great service and prompt delivery. I highly recommend them!
+
+            .row.review
+              .col-12.no-gutters.review-header
+                span.rating
+                  i.fas.fa-star
+                  i.fas.fa-star
+                  i.fas.fa-star
+                  i.far.fa-star
+                  i.far.fa-star
+                span.reviewAuthor Hari,
+                small.reviewTimestamp 25 March 2024
+              .col-12
+                p Excellent quality Electronics!
+    
+    .col-12.col-lg-3
+      p.lead
+        |<h4><p style="color: black;">Ameerpet Electronics Wholesale is known for offering a variety of consumer electronics, including mobile phones, gadgets, and home appliances. It caters to local retailers and electronics stores.
+</h4>
