@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  .row.banner
+    .col-12
+      h1= title
+
+  .row
+    .col-12.col-lg-8
+      h3 Shop Timings
+      ul
+        each shop in timings
+          li
+            | #{shop.name}: #{shop.opening} - #{shop.closing}
+      p
+        | For more information about each shop, feel free to visit them during the listed hours.
+      br
+      br

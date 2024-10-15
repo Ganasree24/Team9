@@ -12,4 +12,5 @@ router.get('/shop3', ctrlLocations.shop3);
 router.get('/location/review/new', ctrlLocations.addReview);
 /* Other pages */
 router.get('/about', ctrlOthers.about);
+router.get('/timings', ctrlOthers.timings);
 module.exports = router;
